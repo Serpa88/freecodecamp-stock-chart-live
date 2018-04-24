@@ -32,7 +32,7 @@ class Stocks {
         console.log(tickerSymbol, stockIndex);
         if (stockIndex !== -1) {
             this.stocks.splice(stockIndex, 1);
-            this.stocks.splice(stockIndex, 1);
+            this.stocks.splice(stockIndex, 1);//No idea why two were needed, but it only works this way
             console.log(this.stocks);
             return true;
         } else return false;
